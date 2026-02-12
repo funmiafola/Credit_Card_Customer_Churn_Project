@@ -42,7 +42,7 @@ Recommend an interactive communication tool that can minimise churn risk.
 # Hypothesis and how to validate?
 Hypothesis 1: 
 Statement: Customers with lower engagement (low spending, fewer transactions) are more likely to churn
-Validation: I will use Boxplots to compare the "Total Transaction counts of churners vs non-churners and Feature importance 
+Validation: The hypothesis will be tested using boxplots between churned and retained customers, supported by statistical testing and machine learning feature importance analysis.
 
 Hypothesis 2: 
 Statement: Demographic factors such as age, income, and marital status influence churn likelihood.
