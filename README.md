@@ -50,7 +50,8 @@ Validation: I will use interactive Bar Chart and Logistic Regression Coefficient
 
 Hypothesis 3:
 Statement: High credit utilisation and late payments increase churn risk.
-Validation: I will use Scatter Plot of Average Utilisation Ration and Total Revolving Balance 
+Validation:  Boxplots comparing utilisation and revolving balance between churned and retained customers,Mann-Whitney U statistical test to test significance and 
+
 
 Hypothesis 4:
 Statement : Interactive Communication tools can reduce churn risk
