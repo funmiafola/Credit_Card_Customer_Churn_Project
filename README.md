@@ -62,9 +62,10 @@ Validation: I will simulate "Retention Impact
 # Project Plan
 1. Collection: I sourced data from Kaggle; I perform schema inspection and initial profiling 
 2. Data Processing &Transformation (ETL)
-3. Data Analysis
-4. Interpretation
-5. DashBoard Development using PowerBI and Tableau and Integrate predictve model for real-time churn scoring.
+3. Data Analysis (EDA)
+4. Hypothesis Testing
+5. Maching Learning Model and Interpretation
+6. DashBoard Development using PowerBI and Tableau and Integrate predictve model for real-time churn scoring.
 
 
 
@@ -76,8 +77,7 @@ How did you structure the data analysis techniques. Justify your response.
 Did the data limit you, and did you use an alternative approach to meet these challenges?
 How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 # Ethical considerations
-Were there any data privacy, bias or fairness issues with the data?
-How did you overcome any legal or societal issues?
+No. it was sourced from Kaggle, open platform. The dataset
 # Dashboard Design
 List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
 Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
