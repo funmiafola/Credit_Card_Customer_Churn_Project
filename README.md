@@ -158,7 +158,7 @@ Content
 Kaggle dataset documentation
 Academic churn modelling references
 Scikit-learn official documentation
-w3w website
+
 # Media
 Dashboard icons: Power BI built-in visuals
 
