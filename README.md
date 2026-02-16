@@ -5,7 +5,7 @@
 # CREDIT CARD CUSTOMER CHURN ANALYSIS & RETENTION DASHBOARD
 Credit Card Customer Churn Analysis & Retention Dashboard is a comprehensive data analytics and machine-learning project designed to help financial institutions identify customers at risk of churning and take proactive retention measures. The project includes an end‑to‑end ETL pipeline, exploratory data analysis (EDA),Hypothesis testing,  predictive modelling, and an interactive dashboard developed in Power BI to support business decision-making.
 
-![alt text](image.png)
+https://app.powerbi.com/groups/me/reports/dbfa067e-f286-42ea-afad-bc1d6f983c9f/95f4177c5f762be4d905?experience=power-bi
 
 
 
@@ -107,9 +107,7 @@ Random Forest modelling
 # Ethical considerations
 Nothing. it was sourced from Kaggle.
 # Dashboard Design
-The dashboard consists of four pages:
-1. Executive Overview
-Churn rate KPIs
+The dashboard consists of four pages:    https://app.powerbi.com/groups/me/reports/dbfa067e-f286-42ea-afad-bc1d6f983c9f/95f4177c5f762be4d905?experience=power-bi
 
 Demographic churn visuals
 2. Behavioural Analysis
