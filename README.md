@@ -3,7 +3,7 @@
 
 
 # CREDIT CARD CUSTOMER CHURN ANALYSIS & RETENTION DASHBOARD
-Credit Card Customer Churn Analysis & Retention Dashboard is a comprehensive data analytics and machine-learning project designed to help financial institutions identify customers at risk of churning and take proactive retention measures. The project includes an end‑to‑end ETL pipeline, exploratory data analysis, predictive modelling, and an interactive dashboard for business stakeholders.
+Credit Card Customer Churn Analysis & Retention Dashboard is a comprehensive data analytics and machine-learning project designed to help financial institutions identify customers at risk of churning and take proactive retention measures. The project includes an end‑to‑end ETL pipeline, exploratory data analysis (EDA),Hypothesis testing,  predictive modelling, and an interactive dashboard developed in Power BI to support business decision-making.
 
 ![alt text](image.png)
 
@@ -16,7 +16,7 @@ The dataset used in this project is sourced from Kaggle, a trusted platform for 
 
 Demographics (age, gender, marital status, income)
 
-Account information (tenure, card type, credit limit)
+Account information (tenure, card category, credit limit, Total Relationship Count)
 
 Transaction behaviour (spending patterns, payment history, Credit Utilisation Ratio, Transaction Count)
 
@@ -42,76 +42,127 @@ Recommend an interactive communication tool that can minimise churn risk.
 # Hypothesis and how to validate?
 Hypothesis 1: 
 Statement: Customers with lower engagement (low spending, fewer transactions) are more likely to churn
-Validation: The hypothesis will be tested using boxplots between churned and retained customers, supported by statistical testing and machine learning feature importance analysis.
+Validation: The hypothesis will be tested using boxplots between churned and retained customers, supported by Mann-Whitney U statistical testing and machine learning feature importance.
 
 Hypothesis 2: 
 Statement: Demographic factors such as age, income, and marital status influence churn likelihood.
-Validation: I will use interactive Bar Chart and Logistic Regression Coefficients
+Validation: Tested using  interactive Bar Chart and Logistic Regression Coefficients analysis
 
 Hypothesis 3:
 Statement: High credit utilisation and late payments increase churn risk.
-Validation:  Boxplots comparing utilisation and revolving balance between churned and retained customers,Mann-Whitney U statistical test to test significance and 
+Validation: Tested using  Boxplots comparing utilisation and revolving balance between churned and retained customers,  supported by Mann-Whitney U statistical testing.
 
 
 Hypothesis 4:
 Statement : Interactive Communication tools can reduce churn risk
-Validation: I will simulate "Retention Impact 
-
+Validation: Tested by analysing contact frequency vs churn and simulating retention impact scenarios using churn probability reduction modelling.
 
 
 # Project Plan
-1. Collection: I sourced data from Kaggle; I perform schema inspection and initial profiling 
+1. Data Collection:
+    Dataset sourced from Kaggle;
+    Schema inspection and initial profiling performed
 2. Data Processing &Transformation (ETL)
+    Data Cleaning
+    Feature Engineering
+    Remove Column
+    EncodingPreparation
 3. Data Analysis (EDA)
+    Demographic Churn Analysis
+    Behavioural Churn Analysis
+    Correlation Analysis
 4. Hypothesis Testing
-5. Maching Learning Model and Interpretation
-6. DashBoard Development using PowerBI and Tableau and Integrate predictve model for real-time churn scoring.
+    Statistical testing
+    Distribution analysis
+5. Maching Learning Modelling
+    Logistic Regression
+    Random Forest
+    Model Evaluation
+6. DashBoard Development 
+    Built in PowerBI 
+    Integrate predictve output churn risk scoring 
 
 
 
 # The rationale to map the business requirements to the Data Visualisations
-List your business requirements and a rationale to map them to the Data Visualisations
+Business Requirement -	Visualisation
+Identify churn drivers -	Feature importance charts
+Understand demographics -	Age, gender, income churn charts
+Behaviour monitoring-Activity & utilisation visuals
+Retention strategy	 -Contact vs churn analysis
+Risk targeting	-Risk segmentation chart
+Executive reporting-	KPI cards#
+Visuals were chosen to ensure business readability and actionable insight delivery.
+
 # Analysis techniques used
-List the data analysis methods used and explain limitations or alternative approaches.
-How did you structure the data analysis techniques. Justify your response.
-Did the data limit you, and did you use an alternative approach to meet these challenges?
-How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+The project utilised:
+Descriptive statistics
+Correlation analysis
+Crosstab segmentation
+Boxplots & distribution analysis
+Mann-Whitney U statistical testing
+Logistic Regression
+Random Forest modelling
+
 # Ethical considerations
-No. it was sourced from Kaggle, open platform. The dataset
+Nothing. it was sourced from Kaggle.
 # Dashboard Design
-List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-How were data insights communicated to technical and non-technical audiences?
-Explain how the dashboard was designed to communicate complex data insights to different audiences.
+The dashboard consists of four pages:
+1. Executive Overview
+Churn rate KPIs
+
+Demographic churn visuals
+2. Behavioural Analysis
+
+Activity level
+Utilisation
+
+Spend & transaction drops
+3. Retention Simulation
+Contact frequency vs churn
+Retention impact modelling
+
+4. Machine Learning Insights
+Feature importance
+Risk segmentation
+Insights were communicated using percentage visuals, segmentation charts, and business-friendly narratives for both technical and non-technical audiences.
+
+Unfixed Bugs
 # Unfixed Bugs
-Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-Did you recognise gaps in your knowledge, and how did you address them?
-If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+Minor visual alignment inconsistencies remain within Power BI
+Logistic regression recall could be improved via hyperparameter tuning
+Real-time API deployment not implemented
+These do not affect analytical validity.
+
 # Development Roadmap
-What challenges did you face, and what strategies were used to overcome these challenges?
-What new skills or tools do you plan to learn next based on your project experience?
+Future improvements include:
+Streamlit app deployment
+Real-time scoring integration
+
 # Deployment
-Heroku
-The App live link is: https://YOUR_APP_NAME.herokuapp.com/
-Set the runtime.txt Python version to a Heroku-20 stack currently supported version.
-The project was deployed to Heroku using the following steps.
-Log in to Heroku and create an App
-From the Deploy tab, select GitHub as the deployment method.
-Select your repository name and click Search. Once it is found, click Connect.
-Select the branch you want to deploy, then click Deploy Branch.
-The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-If the slug size is too large then add large files not required for the app to the .slugignore file.
+The analytical dashboard was deployed locally via Power BI Desktop.
+Future deployment could include:
+Streamlit web application
+Cloud hosting via Heroku
+
+
 # Main Data Analysis Libraries
-Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+pandas → Data manipulation
+numpy → Numerical operations
+matplotlib / seaborn → Visualisation
+scikit-learn → Machine learning
+joblib → Model persistence
+Power BI → Dashboard development
+
+
 # Credits
-In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-You can break the credits section up into Content and Media, depending on what you have included in your project.
-# Content
-The text for the Home page was taken from Wikipedia Article A
-Instructions on how to implement form validation on the Sign-Up page was taken from Specific YouTube Tutorial
-The icons in the footer were taken from Font Awesome
+Content
+Kaggle dataset documentation
+Academic churn modelling references
+Scikit-learn official documentation
+w3w website
 # Media
-The photos used on the home and sign-up page are from This Open-Source site
-The images used for the gallery page were taken from this other open-source site
+Dashboard icons: Power BI built-in visuals
+
 Acknowledgements (optional)
-Thank the people who provided support through this project.
+I would like to acknowledge the support of Code Institute tutors, peers, and online learning communities who contributed throughout this project.
